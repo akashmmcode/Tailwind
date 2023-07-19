@@ -437,7 +437,15 @@ video {
 }
 
 body {
-  font-family: "Racing Sans One", cursive;
+  /* font-family: "Racing Sans One", cursive; */
+  background: linear-gradient(to bottom,white 0%,white 60%, #8b5cf6 60%, #8b5cf6 100%);
+}
+
+@media (min-width: 1024px) {
+  body {
+    /* font-family: "Racing Sans One", cursive; */
+    background: linear-gradient(to right,white 0%,white 60%, #8b5cf6 60%, #8b5cf6 100%);
+  }
 }
 
 *, ::before, ::after{
@@ -544,6 +552,10 @@ body {
   margin-top: 0.75rem;
 }
 
+.mt-auto{
+  margin-top: auto;
+}
+
 .flex{
   display: flex;
 }
@@ -568,12 +580,16 @@ body {
   width: 3rem;
 }
 
-.max-w-lg{
-  max-width: 32rem;
-}
-
 .max-w-screen-2xl{
   max-width: 1536px;
+}
+
+.max-w-xl{
+  max-width: 36rem;
+}
+
+.flex-grow{
+  flex-grow: 1;
 }
 
 .flex-col{
@@ -584,12 +600,12 @@ body {
   place-items: center;
 }
 
-.gap-3{
-  gap: 0.75rem;
-}
-
 .gap-20{
   gap: 5rem;
+}
+
+.gap-3{
+  gap: 0.75rem;
 }
 
 .gap-6{
@@ -641,6 +657,11 @@ body {
   padding-right: 1rem;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -661,11 +682,6 @@ body {
   line-height: 1;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -674,6 +690,11 @@ body {
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold{
@@ -694,39 +715,19 @@ body {
   color: rgb(85 85 255 / var(--tw-text-opacity));
 }
 
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#5555ff\]{
-  --tw-text-opacity: 1;
-  color: rgb(85 85 255 / var(--tw-text-opacity));
-}
-
-.text-slate-400{
-  --tw-text-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-text-opacity));
-}
-
 .text-slate-800{
   --tw-text-opacity: 1;
   color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-slate-950{
-  --tw-text-opacity: 1;
-  color: rgb(2 6 23 / var(--tw-text-opacity));
-}
-
 .text-slate-900{
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .antialiased{
@@ -755,9 +756,35 @@ body {
   outline-offset: 2px;
 }
 
-@media (min-width: 768px){
-  .md\:flex-row{
+@media (min-width: 640px){
+  .sm\:flex-row{
     flex-direction: row;
+  }
+
+  .sm\:gap-0{
+    gap: 0px;
+  }
+
+  .sm\:rounded-l-none{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .sm\:rounded-r-none{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -765,4 +792,10 @@ body {
   .lg\:flex-row{
     flex-direction: row;
   }
+
+  .lg\:text-slate-400{
+    --tw-text-opacity: 1;
+    color: rgb(148 163 184 / var(--tw-text-opacity));
+  }
 }
+
