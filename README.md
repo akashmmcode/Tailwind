@@ -64,4 +64,4 @@ This project is purely for educational and practice purposes and does not requir
 
 ---
 
-Thank you for checking out FrontConf, my Tailwind CSS practice project! If you have any questions or feedback, please feel free to contact me at your-email@example.com. Happy coding! 😊
+Thank you for checking out FrontConf, my Tailwind CSS practice project! If you have any questions or feedback, please feel free to contact me at akashmm92@gmail.com. Happy coding! 😊
