@@ -6,10 +6,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Racing Sans One", ...defaultTheme.fontFamily.sans],
+        sans: ["Fira Sans", ...defaultTheme.fontFamily.sans], //custom added font
       },
       colors: {
         primary: "#5555ff",
+      },
+      height: {
+        13: "3.25rem", //custom added spacing
       },
     },
   },
